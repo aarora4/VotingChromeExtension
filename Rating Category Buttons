@@ -1,11 +1,24 @@
 <html>
+<html>
   <head>
     <title>Buttons Popup</title>
   </head>
   <body>
-      <button id='likelytrue'>Likely True</button>
-      <button id='unknown'>Unknown</button>
-      <button id='likelyfalse'>Likely False</button>
+      <button id='likelytrue'>Likely True 
+      	<svg width="30" height="30">
+   			<circle cx="15" cy="18" r="10" stroke="black" stroke-width="1" fill="green" />
+	  	</svg> 
+      </button>
+      <button id='unknown'>Unknown 
+      	<svg width="30" height="30">
+   			<circle cx="15" cy="18" r="10" stroke="black" stroke-width="1" fill="gray" />
+	  	</svg>
+        </button>
+      <button id='likelyfalse'>Likely False 
+      	<svg width="30" height="30">
+   			<circle cx="15" cy="18" r="10" stroke="black" stroke-width="1" fill="red" />
+	  	</svg>
+      </button>
     <script src="popup.js"></script>
   </body>
 </html>
