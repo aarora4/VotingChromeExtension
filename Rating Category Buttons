@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Buttons Popup</title>
+  </head>
+  <body>
+      <button id='likelytrue'>Likely True</button>
+      <button id='unknown'>Unknown</button>
+      <button id='likelyfalse'>Likely False</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
