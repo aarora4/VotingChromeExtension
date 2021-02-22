@@ -58,4 +58,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+
+/*the flag */
+#content img {
+  position: absolute;
+  top: 0px;
+  right: 26px;
 }
