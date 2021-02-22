@@ -65,3 +65,14 @@ input:checked + .slider:before {
   top: 0px;
   right: 26px;
 }
+
+/*button layout for top bar*/
+.top {
+  position: absolute;
+  top: 0px;
+}
+
+#exit_button {
+  right: 20px;
+}
+
