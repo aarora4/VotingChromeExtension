@@ -5,26 +5,28 @@
   </head>
 
   <body>
-    <button id='likelytrue'>
-      <svg width="30" height="30">
-        <circle cx="15" cy="18" r="10" stroke="black" stroke-width="1" fill="green" />
-      </svg>
-      Likely True
-    </button>
-    <button id='unknown'>
-      <svg width="30" height="30">
-        <circle cx="15" cy="18" r="10" stroke="black" stroke-width="1" fill="grey" />
-      </svg>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      Unknown
-    </button>
-    <button id='likelyfalse'>
-      <svg width="30" height="30">
-        <circle cx="15" cy="18" r="10" stroke="black" stroke-width="1" fill="red" />
-      </svg>
-      Likely False
-    </button>
-    <script src="popup.js"></script>
+<button onclick="myFunction0()"><i class="fa fa-circle" style= "color:green"></i>  Likely True </button>
+<button onclick="myFunction1()"><i class="fa fa-circle" style= "color:gray"></i> Unknown </button>
+<button onclick="myFunction2()"><i class="fa fa-circle" style= "color:red"></i> Likely False </button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction0() {
+  document.getElementById("demo").innerHTML = "pls work";
+}
+function myFunction1() {
+  document.getElementById("demo").innerHTML = "pls work again";
+}
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "pls work one last time";
+}
+</script>
+
+
+
   </body>
 
 </html>
