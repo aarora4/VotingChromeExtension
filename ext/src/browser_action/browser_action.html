@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Chrome Extension</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 	<div id="main">
@@ -11,12 +12,18 @@
   			<span class="slider round"></span>
 		</label>
     </div>
+    <div id ="flag">
+      	<img src="img/flag.png" class="flag">
+    </div>
+    <div id ="exit">
+      	<img src="img/cancel.png" class="exit">
+    </div>
 	<div id="mainPopup">
 		<h1>Hello extensionizr!</h1>
 			<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/src/browser_action/browser_action.html. The CSS is there, too.</p>
 	</div>
 </body>
-<style type="text/css">
+<!-- <style type="text/css">
 	#mainPopup {
 		padding: 10px;
 		height: 400px;
@@ -87,4 +94,4 @@
 	.slider.round:before {
 	  border-radius: 50%;
 	}
-	</style>
+	</style> -->
