@@ -71,9 +71,9 @@
   }
 
   #flag {
-
+    transform: translate(255px, -30px);
   }
 
   #exit {
-    scale:;
+    transform: translate(290px, -60px);
   }
