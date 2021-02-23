@@ -4,6 +4,7 @@
     width: 300px;
     font-family: Helvetica, Ubuntu, Arial, sans-serif;
   }
+
   h1 {
     font-size: 2em;
   }
@@ -67,4 +68,12 @@
 
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  #flag {
+
+  }
+
+  #exit {
+    scale:;
   }
