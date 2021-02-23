@@ -58,21 +58,17 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+ }
 
 /*the flag */
-#content img {
+#flag img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#exit img {
   position: absolute;
   top: 0px;
   right: 26px;
 }
-
-/*button layout for top bar*/
-.top {
-  position: absolute;
-  top: 0px;
-}
-
-#exit_button {
-  right: 20px;
-}
-
