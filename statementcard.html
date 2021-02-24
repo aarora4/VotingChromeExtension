@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      .rectangle {
+        height: 80px;
+        width: 500px;
+        background-color: lightgray;
+        border: 1px solid black;
+        text-align: center;
+        font-family: Helvetica;
+        border-radius: 25px;
+        position: relative;
+      }
+
+      .circle {
+        background-color: orange;
+        border: 1px solid black;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+
+      .text {
+        position: absolute;
+        bottom: 30px;
+        left: 175px;
+      }
+
+      .button1 {
+        height: 42px;
+        width: 100px;
+        background-color: lightgray;
+        text-align: center;
+        font-family: Helvetica;
+        border-top-right-radius: 25px;
+        border-left: 1px solid black;
+        position: absolute;
+        left: 227px;
+        bottom: 8px;
+      }
+
+      .button2 {
+        height: 42px;
+        width: 100px;
+        background-color: lightgray;
+        text-align: center;
+        font-family: Helvetica;
+        border-bottom-right-radius: 25px;
+        border-left: 1px solid black;
+        position: absolute;
+        left: 227px;
+        top: 6px;
+      }
+
+    </style>
+</head>
+
+<body>
+<div class="rectangle">
+    <div class="circle"></div>
+    <div class="text">This is a statement.
+        <button class="button1" onClick = 'console.log("Output")'>View Source
+        </button>
+        <button class="button2" onclick= 'console.log("Output2")'>More Details</button>
+    </div>
+</div>
+</body>
+</html>
