@@ -77,3 +77,55 @@
   #exit {
     transform: translate(290px, -60px);
   }
+  .statementrectangle {
+    height: 80px;
+    width: 90%;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    font-family: Helvetica;
+    border-radius: 25px;
+    position: relative;
+  }
+
+  .statementcircle {
+    background-color: orange;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .statementtext {
+    position: absolute;
+    bottom: 30px;
+    left: 175px;
+  }
+
+  .statementbutton1 {
+    height: 42px;
+    width: 100px;
+    background-color: lightgray;
+    text-align: center;
+    font-family: Helvetica;
+    border-top-right-radius: 25px;
+    border-left: 1px solid black;
+    position: absolute;
+    left: 80%;
+    bottom: 8px;
+  }
+
+  .statementbutton2 {
+    height: 42px;
+    width: 100px;
+    background-color: lightgray;
+    text-align: center;
+    font-family: Helvetica;
+    border-bottom-right-radius: 25px;
+    border-left: 1px solid black;
+    position: absolute;
+    left: 80%;
+    top: 6px;
+  }
