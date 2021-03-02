@@ -76,6 +76,7 @@
 
   #exit {
     transform: translate(290px, -60px);
+    width: 50%;
   }
   .statementrectangle {
         height: 80px;
