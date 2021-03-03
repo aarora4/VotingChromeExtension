@@ -30,6 +30,34 @@
 			<button class="statementbutton1" onClick = 'console.log("Output")'>View Source</button>
 			<button class="statementbutton2" onclick= 'console.log("Output2")'>More Details</button>
 		</div>
+		
+		<div class="slideshow-container">
+		
+			<div class="mySlides fade">
+				<img src="img/img1.png" width="80%" height="80%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/img2.png" width="80%" height="80%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/img3.png" width="80%" height="80%">
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<script type="text/javascript" src="browser_action.js"></script>
+		</div>
+		
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<script type="text/javascript" src="browser_action.js"></script>
+		</div>
 		<h1>Hello extensionizr!</h1>
 			<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/src/browser_action/browser_action.html. The CSS is there, too.</p>
 	</div>
