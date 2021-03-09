@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Chrome Extensions</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="main">
@@ -13,7 +14,7 @@
         <span id='statementText1'>Rating</span>
         <span id = 'statementCircle'></span>
         <span id='statementText2'> Likely False</span>
-        <span id='statementText3'> Learn more about polling places</span>
+        <span id='statementText3'> <u>Learn more about polling places</u></span>
         </p>
     </div>
 <!--       Hailey can you 
@@ -23,29 +24,37 @@
     <style>
     #roundStatement {
         border-radius: 25px;
-        border: 2px solid #707070;
+        border: 1px solid #707070;
         padding: 20px; 
-        width: 100px;
-        height: 100px;  
+        width: 75%;
+        height: 75%;  
     }
     #statementCircle {
         height: 50px;
         width: 50px;
         background-color: #FF907C;
         border-radius: 50%;
+        border: 1px solid #707070 ;
         display: inline-block;
         transform: translate(-20px,5px);
     }
     #statementText1 {
         font-family: "Lora";
+        font-size: 34px;
+        color: #707070
     }   
     #statementText2 {
+      font-family: "Hind Madurai";
+      font-size: 30px;
+      color: #707070
     
     }  
     #statementText3 {
-    
+      font-family: "Montserrat";
+      font-size: 18px;
+      color: #707070
+
     }  
     </style>
 </body>
 <script src="./TopButtonBar.js"></script>
-
