@@ -6,20 +6,46 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="main">
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+<div id="main">
+    <div id='firstCard'>
+     <svg height="100" width="100"> 
+        <p id='roundStatement'>
+        <span id='statementText1'>Rating</span>
+        <span id = 'statementCircle'></span>
+        <span id='statementText2'> Likely False</span>
+        <span id='statementText3'> Learn more about polling places</span>
+        </p>
     </div>
-    <div id ="flag">
-      <img src="img/flag.png" class="flag">
-    </div>
+<!--       Hailey can you 
+            -Add stroke to the circle
+            -give the designated fonts to the stylings of the statements
+            -Figure out the alignment of the items -->
+    <style>
+    #roundStatement {
+        border-radius: 25px;
+        border: 2px solid #707070;
+        padding: 20px; 
+        width: 100px;
+        height: 100px;  
+    }
+    #statementCircle {
+        height: 50px;
+        width: 50px;
+        background-color: #FF907C;
+        border-radius: 50%;
+        display: inline-block;
+        transform: translate(-20px,5px);
+    }
+    #statementText1 {
+        font-family: "Lora";
+    }   
+    #statementText2 {
     
-    <div id ="exit">
-      <img src="img/cancel.png" class="exit">
-    </div>
-
+    }  
+    #statementText3 {
+    
+    }  
+    </style>
 </body>
 <script src="./TopButtonBar.js"></script>
 
