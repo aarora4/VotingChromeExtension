@@ -17,7 +17,7 @@
       	<img src="img/flag.png" class="flag" width="28" height="28">
     </div>
     <div id ="exit">
-      	<img src="img/cancel.png" class="exit" width="25" height="25">
+       	<img src="img/cancel.png" class="exit" width="25" height="25">
     </div>
 	<div id="mainPopup">
 		<button onclick="myFunction0()"><i class="fa fa-circle" style= "color:green"></i>  Likely True </button>
@@ -34,7 +34,17 @@
 		<div class="slideshow-container">
 		
 			<div class="mySlides fade">
-				<img src="img/img1.png" width="80%" height="80%">
+				<div id='firstCard'>
+			       	<p id='statement1Border'>
+			        <span id= 'statement1Text1'>Rating</span>
+			        <br>
+			        <span id = 'statement1Circle'></span>
+			        <br>
+			        <span id='statement1Text2'> Likely False</span>
+			        <br>
+			        <span id='statement1Text3'> <u>Learn more about polling places</u></span>
+			        </p>
+    			</div>
 			</div>
 
 			<div class="mySlides fade">
@@ -58,79 +68,7 @@
 			<span class="dot" onclick="currentSlide(3)"></span>
 			<script type="text/javascript" src="browser_action.js"></script>
 		</div>
-		<h1>Hello extensionizr!</h1>
-			<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/src/browser_action/browser_action.html. The CSS is there, too.</p>
+<!-- 		<h1>Hello extensionizr!</h1>
+			<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/src/browser_action/browser_action.html. The CSS is there, too.</p> -->
 	</div>
 </body>
-<!-- <style type="text/css">
-	#mainPopup {
-		padding: 10px;
-		height: 400px;
-		width: 300px;
-		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	}
-	h1 {
-		font-size: 2em;
-	}
-		.switch {
-	  position: relative;
-	  display: inline-block;
-	  width: 60px;
-	  height: 34px;
-	}
-
-	/* Hide default HTML checkbox */
-	.switch input {
-	  opacity: 0;
-	  width: 0;
-	  height: 0;
-	}
-
-	/* The slider */
-	.slider {
-	  position: absolute;
-	  cursor: pointer;
-	  top: 0;
-	  left: 0;
-	  right: 0;
-	  bottom: 0;
-	  background-color: #ccc;
-	  -webkit-transition: .4s;
-	  transition: .4s;
-	}
-
-	.slider:before {
-	  position: absolute;
-	  content: "";
-	  height: 26px;
-	  width: 26px;
-	  left: 4px;
-	  bottom: 4px;
-	  background-color: white;
-	  -webkit-transition: .4s;
-	  transition: .4s;
-	}
-
-	input:checked + .slider {
-	  background-color: #98ff98;
-	}
-
-	input:focus + .slider {
-	  box-shadow: 0 0 1px #2196F3;
-	}
-
-	input:checked + .slider:before {
-	  -webkit-transform: translateX(26px);
-	  -ms-transform: translateX(26px);
-	  transform: translateX(26px);
-	}
-
-	/* Rounded sliders */
-	.slider.round {
-	  border-radius: 34px;
-	}
-
-	.slider.round:before {
-	  border-radius: 50%;
-	}
-	</style> -->
