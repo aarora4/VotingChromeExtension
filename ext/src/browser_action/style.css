@@ -68,12 +68,10 @@ input:checked + .slider:before {
 /*End of On/Off Button Styling */
 
 /* Top Buttons */
-#flag {
-  transform: translate(255px, -30px);
-}
 
-#exit {
-  transform: translate(290px, -60px);
+
+#flag {
+  transform: translate(290px, -30px);
   width: 50%;
 }
 /* End Top Buttons*/
@@ -81,7 +79,7 @@ input:checked + .slider:before {
 .statementrectangle {
   height: 80px;
   width: 95%;
-  background-color: lightgray;
+  
   border: 1px solid black;
   text-align: center;
   font-family: Helvetica;
@@ -110,7 +108,7 @@ input:checked + .slider:before {
 .statementbutton1 {
   height: 40px;
   width: 100px;
-  background-color: lightgray;
+  
   text-align: center;
   font-family: Helvetica;
   border-top-right-radius: 25px;
@@ -123,7 +121,7 @@ input:checked + .slider:before {
 .statementbutton2 {
   height: 42px;
   width: 100px;
-  background-color: lightgray;
+
   text-align: center;
   font-family: Helvetica;
   border-bottom-right-radius: 25px;
@@ -136,6 +134,7 @@ input:checked + .slider:before {
 /* Slideshow container */
 
 .slideshow-container {
+  height: 80%
   width: 80%;
   position: relative;
   margin: auto;
@@ -143,8 +142,9 @@ input:checked + .slider:before {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 /* Next & previous buttons */
@@ -200,12 +200,17 @@ input:checked + .slider:before {
 
 
 /* Statement Card 1 Styling */
+#firstCard {
+  display: flex;
+  justify-content: center;
+}
+
 #statement1Border {
     border-radius:25px;
     border: 1px solid #707070;
     padding: 20px; 
-    width: 85%;
-    height: 40%;
+    width: 200px;
+    height: 200px;
 }
 #statement1Circle {
     height: 85px;
