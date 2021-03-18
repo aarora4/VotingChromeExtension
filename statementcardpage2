@@ -12,6 +12,8 @@
   }
 
   div {
+    width: 500px;
+    margin: auto;
     text-align: center;
     border: 2px solid grey;
     border-radius: 64px;
