@@ -12,6 +12,7 @@
   }
 
   div {
+    text-align: center;
     border: 2px solid grey;
     border-radius: 12px;
   }
@@ -20,7 +21,7 @@
 <div>
 
   <body>
-    <h1 style=" font-family: 'Lora' , serif;">Most Similar To</h1>
+    <h1 style=" font-family: 'Lora' , serif;">Most Similar To </h1>
     <p> <b>Statement: </b>3 million undocumented immigrants had voted for Clinton in the 2016 General Election</p>
     <p>
 
