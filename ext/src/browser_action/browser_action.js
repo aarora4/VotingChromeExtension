@@ -37,14 +37,6 @@ else {
   }
 }
 
-
-
-
-
-document.getElementsByClassName("exit").onclick = function() {
-  window.close();
-}
-
 document.addEventListener('DOMContentLoaded', function() {
   var link = document.getElementById('prev1');
   // onClick's logic below:

@@ -5,6 +5,7 @@
     <title>Chrome Extension</title>
     <link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="browser_action.js"></script>
 </head>
 <body>
@@ -30,7 +31,6 @@
 		</div>
 		
 		<div class="slideshow-container">
-		
 			<div class="mySlides fade">
 				<div id='firstCard'>
 			       	<p id='statement1Border'>
@@ -46,7 +46,18 @@
 			</div>
 
 			<div class="mySlides fade">
-				<img src="img/img2.png" width="80%" height="80%">
+				<div id='secondCard'>
+					<p id='statement2Border'>
+					<span id= 'statement2Text1'><b>Most Similar To</b></span>
+					<br>
+					<span id= 'statement2Text2'><b>Statement:</b> 3 million undocumented immigrants had voted for Clinton in the 2016 General Election</span>
+					<br>
+					<span id= 'statement2Text3'><b>Topic:</b> Polling Places</span>
+					<br>
+					<span id= 'statement2Text4'><b>Verified Rating:</b> False</span>
+					<br>
+					<span id= 'statement2Text5'><ins><b>Source:</b> tinyurl.com/myurl123</ins></span>
+    			</div>
 			</div>
 
 			<div class="mySlides fade">
@@ -61,9 +72,9 @@
 		
 		<!-- The dots/circles -->
 		<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
 		</div>
 <!-- 		<h1>Hello extensionizr!</h1>
 			<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/src/browser_action/browser_action.html. The CSS is there, too.</p> -->
