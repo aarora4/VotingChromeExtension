@@ -1,5 +1,4 @@
 var slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -27,6 +26,37 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+if (document.readyState === 'complete') {
+  showSlides(slideIndex);
+}
+else {
+  document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+      showSlides(slideIndex);
+    }
+  }
+}
+
+
+
+
+
 document.getElementsByClassName("exit").onclick = function() {
   window.close();
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.getElementById('prev1');
+  // onClick's logic below:
+  link.addEventListener('click', function() {
+      plusSlides(-1);
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.getElementById('next1');
+  // onClick's logic below:
+  link.addEventListener('click', function() {
+      plusSlides(1);
+  });
+});
