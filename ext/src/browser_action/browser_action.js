@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var link = document.getElementById('prev1');
   // onClick's logic below:
   link.addEventListener('click', function() {
-      plusSlides(-1);
+      plusSlides(1);
   });
 });
 
@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var link = document.getElementById('next1');
   // onClick's logic below:
   link.addEventListener('click', function() {
-      plusSlides(1);
+      plusSlides(-1);
   });
 });
