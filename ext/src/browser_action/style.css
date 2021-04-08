@@ -18,6 +18,8 @@
   height: 0;
 }
 
+
+
 /* The slider */
 .slider {
   position: absolute;
@@ -69,6 +71,66 @@ input:checked + .slider:before {
 
 /* Top Buttons */
 
+.headerTextColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: flex-start;
+  margin-top: -50px;
+  
+}
+
+.headerLabel1 {
+  font-family: "Montserrat SemiBold";
+  font-size: 45px;
+  color: #707070;
+  text-align: center;
+  line-height: 10%;
+
+}
+.headerLabel2 {
+  font-family: "Lora";
+  font-size: 25px;
+  color: #707070;
+  text-align: center;
+  line-height: 10%;
+  margin-top: -2%;
+}
+
+.headerLabel3 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #707070;
+  text-align: center;
+  line-height: 10%;
+  margin-top: -2px;
+}
+
+.statementFilterButton {
+  height: 45px;
+  border-radius: 2em;
+  border: 1px solid #707070;
+  font-family: "Montserrat";
+  background-color: white;
+  width: 32%;
+  font-size: 11px;
+  color: #707070;
+
+}
+
+.fa {
+  margin-right: 3px;
+}
+
+.statementFilters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 
 #flag {
   transform: translate(290px, -30px);
@@ -80,29 +142,53 @@ input:checked + .slider:before {
   height: 80px;
   width: 95%;
   
-  border: 1px solid black;
+  border: 1px solid #707070;
   text-align: center;
-  font-family: Helvetica;
+  font-family: "Hind Madurai";
   border-radius: 25px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+}
+.statementRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex: 0.3
+}
+.statementColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.statementCircleTextRow {
+  display: flex;
+  flex-direction: row;
+  flex: 0.7;
+  align-items: center;
 }
 
 .statementcircle {
-  background-color: orange;
+  background-color: #8BE5B3;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #707070;
   height: 40px;
   width: 40px;
   border-radius: 20px;
-  margin-top: 20px;
   margin-left: 10px;
+  
 }
 
 .statementtext {
   position: relative;
   text-align: left;
-  bottom: 35%;
-  left: 20%;
+  margin-left: 10px;
+  
+  /* bottom: 35%;
+  left: 20%; */
 }
 
 .statementbutton1 {
@@ -112,10 +198,14 @@ input:checked + .slider:before {
   text-align: center;
   font-family: Helvetica;
   border-top-right-radius: 25px;
-  border-left: 1px solid black;
+  border-left: 1px solid #707070;
   position: relative;
-  left: 50.5%;
-  bottom: 98.5%;
+  border-style: solid;
+  border-bottom: none;
+  background-color: white;
+  
+  /* left: 50.5%;
+  bottom: 98.5%; */
   outline: none;
 }
 .statementbutton2 {
@@ -125,16 +215,18 @@ input:checked + .slider:before {
   text-align: center;
   font-family: Helvetica;
   border-bottom-right-radius: 25px;
-  border-left: 1px solid black;
+  border-left: 1px solid #707070;
   position: relative;
-  left: 14.5%;
-  bottom: 47.5%;
+  border-style: solid;
+  background-color: white;
+  /* left: 14.5%;
+  bottom: 47.5%; */
   outline:none;
 }
 /* Slideshow container */
 
 .slideshow-container {
-  height: 80%
+  /* height: 80%f */
   width: 80%;
   position: relative;
   margin: auto;
