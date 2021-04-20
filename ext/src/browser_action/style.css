@@ -246,7 +246,7 @@ input:checked + .slider:before {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 12px;
   color: white;
   font-weight: bold;
   font-size: 12px;
@@ -257,13 +257,12 @@ input:checked + .slider:before {
 }
 
 .prev {
-	left: 0%;
+  left: 0%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  left: 74%;
-  border-radius: 6px 6px 6px 6px;
+  left: 73%;
 }
 
 /* The dots/bullets/indicators */
@@ -271,7 +270,7 @@ input:checked + .slider:before {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 4px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -366,6 +365,5 @@ input:checked + .slider:before {
 #statement2Text5 {
   font-family: "Montserrat";
   font-size: 14px;
-
 } 
 
