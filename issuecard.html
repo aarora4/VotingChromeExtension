@@ -1,51 +1,83 @@
 <head>
+
   <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora&display=swap" rel="stylesheet">
 </head>
-<style>
-  h1 {
-    font-size: 34px;
-  }
 
-  body {
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: 20px;
-  }
-  div {
-    width: 600px;
-    height: 600px;
-    margin: auto;
-    border: 2px solid grey;
-    border-radius: 64px;
-  }
- 
-  #boxes {
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding: 20px;
-    width: 500px;
-    height: 50px;
-  }
-  #lastbox {
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding: 20px;
-    width: 100px;
-    height: 25px;
-  }
-    
-</style>
-<div>
+<div id="main">
+    	<label class="switch">
+  			<input type="checkbox">
+  			<span class="slider round"></span>
+		</label>
+    </div>
+    <div id ="flag">
+      	<img src="img/flag.png" class="flag" width="28" height="28">
+    </div>
+     
+<h1 style=" font-family: 'Lora' , serif;">Report an Issue </h1>
+
+<h2 style=" font-family: 'Lora' , serif;"> Statement </h2>
+
+<div class= "a">
+
   <body>
-    <h1 style=" font-family: 'Lora' , serif;">Report an Issue </h1>
-    <p> <b>Statement</b>
-      <div id= 'boxes'></div>
-      <b>Rating</b>
-      <div id= 'boxes'></div>
-    <b>Issue Type</b>
-    <br>
-    <b>Comment </b>
-    <div id= 'boxes'></div>
-    <br>
-    <div id ='lastbox'> </div>
+    <p> 3 million undocumented immigrants had voted for Clinton in the 2016 General Election</p>
   </body>
 </div>
+
+<h2 style=" font-family: 'Lora' , serif;"> Rating </h2>
+
+<div class= "a">
+
+  <body>
+    <p> Likely False</p>
+  </body>
+</div>
+
+<h3 style=" font-family: 'Lora' , serif;"> Issue Type </h3>
+
+<div class= "b">
+
+  <input type="radio" name="issue type" value="Wrong Rating">
+    <label>Wrong Rating</label>
+   
+</div>
+
+<div class= "b">
+
+  <input type="radio" name="issue type" value="Wrong Source">
+    <label>Wrong Source</label>
+</div>
+
+<div class= "b">
+
+  <input type="radio" name="issue type" value="Unrelated to Politics">
+    <label>Unrelated to Politics</label>
+   
+    </div>
+
+<div class= "b">
+
+  <input type="radio" name="issue type" value="Other">
+  <label>Other</label>
+ 
+  </div>
+ 
+  <h2 style=" font-family: 'Lora' , serif;"> Comments</h2>
+ 
+  <input type="text" style="height: 50px; width: 500px; border-radius: 32px;" id="Comments" name="Comments"><br>
+
+<p>
+
+</p>
+
+<button class= button onclick="Submit()"><i style= "color:green"></i> Submit </button>
+
+<p id="Issue Report Form"></p>
+
+<script>
+function Submit() {
+  document.getElementById("Issue Report Form").innerHTML = "pls work";
+}
+</script>
+
+<!Submit button just prints something for now>
