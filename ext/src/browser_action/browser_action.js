@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // onClick's logic below:
   link.addEventListener('click', function() {
       plusSlides(1);
-      container.style.visibility = "hidden";
+      //container.style.visibility = "hidden";
   });
 });
 
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var container = document.getElementById("mainPopup")
   // onClick's logic below:
   flagButton.addEventListener('click', function() {
-      container.style.visibility = "hidden";
+      //container.style.visibility = "hidden";
   });
 });
 
