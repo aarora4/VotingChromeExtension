@@ -20,27 +20,27 @@
     </div>
 	<div id="mainPopup">
 		<div class="headerTextColumn">
-			<p class="headerLabel1">3</p>
+			<p class="headerLabel1" id="numStatementsHeader">3</p>
 			<p class="headerLabel2">Statements Flagged</p>
 			<p class="headerLabel3">On this page</p>
 		</div>
 
 		<div class="statementFilters">
-			<button class="statementFilterButton" onclick="myFunction0()"><div class="fa fa-circle" style= "color:#8BE5B4;"></div>  Likely True </button>
-			<button class="statementFilterButton" onclick="myFunction1()"><div class="fa fa-circle" style= "color:#A3A3A3;"></div> Unknown </button>
-			<button class="statementFilterButton" onclick="myFunction2()"><i class="fa fa-circle" style= "color:#FF907C;"></i> Likely False </button>
+			<button class="statementFilterButton" onclick="myFunction0()" id= "trueHighlightField"><div class="fa fa-circle" style= "color:#8BE5B4;"></div>  Likely True </button>
+			<button class="statementFilterButton" onclick="myFunction1()" id= "unknownHighlightField"><div class="fa fa-circle" style= "color:#A3A3A3;"></div> Unknown </button>
+			<button class="statementFilterButton" onclick="myFunction2()" id= "falseHighlightField"><i class="fa fa-circle" style= "color:#FF907C;"></i> Likely False </button>
 		</div>
 
 		<div class="statementrectangle">
 			<div class="statementCircleTextRow">
-				<div class="statementcircle"></div>
-				<div class="statementtext">This is a statement.</div>
+				<div class="statementcircle" id="statementCircleMain"></div>
+				<div class="statementtext" id="flaggedStatementViewer">This is a flagged statement.</div>
 			</div>
 			
 			<div class="statementRow">
 				<div class="statementColumn">
-					<button class="statementbutton1" onClick = 'console.log("Output")'>View Source</button>
-					<button class="statementbutton2" onclick= 'console.log("Output2")'>More Details</button>
+					<button class="statementbutton1" onClick = 'console.log("Output")'><a href="" id="viewSourceURL">View Source</a></button>
+					<button class="statementbutton2" onclick= 'console.log("Output2")'><a href="" id="moreDetailsURL">More Details</a></button>
 				</div>
 			</div>
 			
@@ -56,10 +56,14 @@
 			        <br>
 			        <span id='statement1Text2'> Likely False</span>
 			        <br>
-			        <span id='statement1Text3'> <u>Learn more about polling places</u></span>
+			        <span id='statement1Text3'>
+						<a href="" id ="statement1Text3URL">
+							<u id='statement1Text3Content'>Learn more about this topic</u>
+						</a>
+					</span>
 			        </p>
     			</div>
-			</div>
+			</div>/
 
 			<div class="mySlides fade">
 				<div id='secondCard'>

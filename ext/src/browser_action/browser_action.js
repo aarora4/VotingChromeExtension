@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // onClick's logic below:
   link.addEventListener('click', function() {
       plusSlides(1);
-      container.style.visibility = "hidden";
+      //container.style.visibility = "hidden";
   });
 });
 
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var container = document.getElementById("mainPopup")
   // onClick's logic below:
   flagButton.addEventListener('click', function() {
-      container.style.visibility = "hidden";
+      //container.style.visibility = "hidden";
   });
 });
 
@@ -74,3 +74,48 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function updateAll(truth, numStatements, flaggedStatement, similarStatement, topic, sourceLink, detailsLink) {
+  updateTruth(truth);
+  (document.getElementById("numStatementsHeader")).innerHTML = numStatements;
+  updateStatements(flaggedStatement, similarStatement, topic)
+  updateLinks(sourceLink, detailsLink)
+}
+
+function updateTruth(truth) {
+  if (truth == "True") {
+    (document.getElementById("trueHighlightField")).style.backgroundColor = "#FDFF47";
+    (document.getElementById("statementCircleMain")).style.backgroundColor = "#8BE5B3";
+    (document.getElementById("statement1Circle")).style.backgroundColor = "#8BE5B3";
+    (document.getElementById("statement1Text2")).innerHTML = "Likely True";
+    //(document.getElementById("statement2Text4")).innerHTML = <b>Verified Rating:</b> + " True";
+  } else if (truth == "Unkown") {
+    (document.getElementById("unknownHighlightField")).style.backgroundColor = "#FDFF47";
+    (document.getElementById("statementCircleMain")).style.backgroundColor = "#707070";
+    (document.getElementById("statement1Circle")).style.backgroundColor = "#707070";
+    (document.getElementById("statement1Text2")).innerHTML = "Unknown";
+   // (document.getElementById("statement2Text4")).innerHTML = <b>Verified Rating:</b> + " Unknown";
+  } else if (truth == "False") {
+    (document.getElementById("falseHighlightField")).style.backgroundColor = "#FDFF47";
+    (document.getElementById("statementCircleMain")).style.backgroundColor = "#FF907C";
+    (document.getElementById("statement1Circle")).style.backgroundColor = "#FF907C";
+    (document.getElementById("statement1Text2")).innerHTML = "Likely False";
+    //(document.getElementById("statement2Text4")).innerHTML = <b>Verified Rating:</b> + " False";
+  } else {
+    throw "illegalTruthValue";
+  }
+}
+
+
+function updateStatements(flaggedStatement, similarStatement, topic) {
+  (document.getElementById("flaggedStatementViewer4")).innerHTML = flaggedStatement;
+  (document.getElementById("statement1Text3Content")).innerHTML = "Learn more about " + topic;
+  //(document.getElementById("statement2Text2")).innerHTML = <b>Statement:</b>  + " " + similarStatement;
+  //(document.getElementById("statement2Text3")).innerHTML = <b>Topic:</b>  + " " + topic;
+}
+
+function updateLinks(sourceLink, detailsLink) {
+  (document.getElementById("viewSourceURL")).href = sourceLink;
+  (document.getElementById("moreDetailsUR")).href = detailsLink;
+  (document.getElementById("statement1Text3URL")).href = sourceLink;
+ //(document.getElementById("statement2Text5")).innerHTML = <ins><b>Source:</b> sourceLink</ins>;
+}
