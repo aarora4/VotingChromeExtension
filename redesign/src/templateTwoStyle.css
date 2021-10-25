@@ -1,0 +1,122 @@
+.body {
+    background-color: rgb(254, 254, 252);
+  }
+  
+  .superWrapper {
+    width: 350px;
+    height: 600px;
+    background-color: rgb(254, 254, 252);
+  }
+
+  #header1 {
+      height: 100px;
+      width: inherit;
+      background-color: inherit;
+      font-family: Montserrat;
+      text-align: left;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 60pt;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #main1 {
+    height: 400px;
+    width: inherit;
+    background-color: inherit;
+  }
+
+  .expandedDetailCardSlide {
+      background-color: inherit;
+      height: 400px;
+      width: 300px;
+      margin-left: 25px;
+      margin-right: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .expandedDetailNumberCard {
+      background-color: #edbc00;
+      height: 40px;
+      width: 290px;
+
+      text-align: left;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 20pt;
+      line-height: 1.4;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      border-radius: 15px;
+      border-style: solid;
+      border-width: 2px;
+      box-shadow: 4px 2px 2px #f2e49b;
+  }
+
+  .expandedDetailInfoCard {
+    background-color: #f2e49b;
+    height: 200px;
+    width: 275px;
+
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12pt;
+    line-height: 1.4;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 5px;
+
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 4px 2px 2px #edbc00;
+  }
+
+  .expandedDetailSourceCard {
+    background-color: #f2e49b;
+    height: 50px;
+    width: 275px;
+
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 10pt;
+    line-height: 0.2;
+
+    padding-left: 20px;
+    padding-right: 5px;
+
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 4px 2px 2px #edbc00;
+  }
+
+  #footer1 {
+    height: 100px;
+    width: inherit;
+    background-color: inherit;
+    font-family: Montserrat;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 8pt;
+  }

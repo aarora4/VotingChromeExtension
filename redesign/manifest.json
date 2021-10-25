@@ -1,0 +1,20 @@
+{
+    "name": "VoterTech Misinformation Assistant",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "This tool uses AI to bring potentially misleading statements about voting to your attention.",
+    "icons": {
+        "16": "icons/ballot-16x16.png",
+        "19": "icons/ballot-19x19.png",
+        "32": "icons/ballot-32x32.png"
+    },
+    "browser_action": {
+        "default_icon": "icons/ballot-19x19.png",
+        "default_title": "VoterTech Misinformation Assistant",
+        "default_popup": "src/templateOne.html"
+    },
+    "permissions": [
+        "https://*/*"
+    ],
+    "author": "Ruston Shome"
+}
